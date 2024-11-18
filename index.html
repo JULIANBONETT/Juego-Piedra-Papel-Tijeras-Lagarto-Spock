@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <title>JUEGO</title>
+</head>
+<body>
+    <!-- Formulario de inicio de sesión -->
+    <div class="f" id="ff">
+        <div id="formInicioSesion" class="box">
+            <form id="formInicio">
+                <div class="container">
+                    <header>Iniciar sesión</header>
+                    <div class="input-field">
+                        <input type="text" id="correo" class="input" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" class="input" placeholder="Contraseña" required>
+                    </div>
+                    <div class="input-field">
+                        <button id="Inicioo" class="submit">Iniciar Sesión</button>
+                    </div>
+                    <p class="footerRegistro">¿Crear Cuenta? <a href="#" id="mostrarRegistro" class="link">Regístrate aquí</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="formRegistro" class="box" style="display: none;">
+            <form id="formRegistro2">
+                <div class="container">
+                    <header>Registro</header>
+                    <div class="input-field">
+                        <input type="text" id="nombreR" class="input" placeholder="Nombre" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="correoR" class="input" placeholder="Correo" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="passwordR" class="input" placeholder="Contraseña" required>
+                    </div>
+                    <div class="input-field">
+                        <button id="Registroo" class="submit">Registrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Juego -->
+    <div id="juego" style="display: none;">
+        <div class="contenedor-contador">
+            <h1>Ganadas: <span id="ganadas">0</span></h1>
+            <h1>Perdidas: <span id="perdidas">0</span></h1>
+        </div>
+        <h1>Piedra | Papel | Tijeras | Lagarto | Spock</h1>
+        <div id="campo-batalla" class="campo-batalla">
+            <div id="img-ataque-jugador" class="caja-batala"></div>
+            <div class="caja-batala"><p class="text-mensajes">VS</p></div>
+            <div id="img-ataque-pc" class="caja-batala"></div>
+        </div>
+        <p id="msj-batalla" class="text-mensajes"></p>
+        <h2>Elige un ataque</h2>
+        <div>
+            <img id="btn-piedra" class="btn-ataques" src="imagenes/converted_image.png" alt="">
+            <img id="btn-papel" class="btn-ataques" src="imagenes/converted_image_3.png" alt="">
+            <img id="btn-tijeras" class="btn-ataques" src="imagenes/converted_image_2.png" alt="">
+            <img id="btn-lagarto" class="btn-ataques" src="imagenes/converted_image_1.png" alt="">
+            <img id="btn-spock" class="btn-ataques" src="imagenes/converted_image (1).png" alt="">
+        </div>
+        <center>
+            <button id="reiniciar">¡Vamos de nuevo!</button>
+        </center>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
